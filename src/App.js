@@ -28,12 +28,23 @@ App.post("/posts", (req, res) => {
 App.get("/posts/:id", (req, res) => {
     const id = req.params.id;
     const data = Load(filePath);
-    res.send(data.posts.find(item => item.id === parseInt(id)));
+    res.send(data.posts.find(post => post.id === parseInt(id)));
 });
 
 App.get("/posts/:id/comments", (req, res) => {
     const data = Load(filePath);
     res.send(data.comments.filter(comment => comment.postId === parseInt(req.params.id)));
+});
+
+App.post("/posts/:id/comments", (req, res) => {
+    const data = Load(filePath);
+    data.comments.push({
+        ...req.body,
+        "id": data.comments.length + 1
+    });
+    data.posts.find(post => post.id === parseInt(req.params.id)).commentCount++;
+    Save(data, filePath);
+    res.send("Comment sent");
 });
 
 App.listen(3333, () => console.log("Running server..."));

@@ -6,14 +6,14 @@
             "coverUrl": "https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png",
             "contentPreview": "Esta é a estrutura de um post esperado pelo front-end",
             "content": "Este é o conteúdo do post, o que realmente vai aparecer na página do post...",
-            "commentCount": 2
+            "commentCount": 5
         },
         {
             "title": "TESTE",
             "coverUrl": "https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png",
             "contentPreview": "Esta é a estrutura de um post esperado pelo front-end 2",
             "content": "Este é o conteúdo do post, o que realmente vai aparecer na página do post...",
-            "commentCount": 0,
+            "commentCount": 1,
             "id": 2
         },
         {
@@ -93,6 +93,30 @@
             "postId": 1,
             "author": "Maria",
             "content": "Como faz pra dar palmas?"
+        },
+        {
+            "postId": 1,
+            "author": "TESTE",
+            "content": "Olá",
+            "id": 3
+        },
+        {
+            "postId": 1,
+            "author": "mais um teste",
+            "content": "Olá de novo",
+            "id": 4
+        },
+        {
+            "postId": 1,
+            "author": "mais um",
+            "content": "hallo",
+            "id": 5
+        },
+        {
+            "postId": 2,
+            "author": "edu",
+            "content": "que teste bonito",
+            "id": 6
         }
     ]
 }
