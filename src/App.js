@@ -17,7 +17,7 @@ App.post("/posts", (req, res) => {
     const data = Load(filePath);
     data.posts.push({
         ...req.body,
-        "id": data.posts.length + 1,
+        "id": data.posts[data.posts.length - 1].id + 1 || 1,
         "commentCount": 0,
         "comments": []
     });
@@ -55,6 +55,15 @@ App.put("/posts/:id", (req, res) => {
     post.content = req.body.content;
     Save(data, filePath);
     res.send(post);
+});
+
+App.delete("/posts/:id", (req, res) => {
+    const data = Load(filePath);
+    const post = data.posts.find(post => post.id === parseInt(req.params.id));
+    data.posts.splice(data.posts.indexOf(post), 1);
+    data.comments = data.comments.filter(comment => comment.postId !== parseInt(req.params.id));
+    Save(data, filePath);
+    res.send("Post deleted");
 });
 
 App.listen(3333, () => console.log("Running server..."));
