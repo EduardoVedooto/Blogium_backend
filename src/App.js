@@ -45,13 +45,18 @@ App.get("/posts/:id/comments", (req, res) => {
 
 App.post("/posts/:id/comments", (req, res) => {
     const data = Load(filePath);
-    data.comments.push({
-        ...req.body,
-        "id": data.comments.length + 1
-    });
-    data.posts.find(post => post.id === parseInt(req.params.id)).commentCount++;
-    Save(data, filePath);
-    res.send("Comment sent");
+    const body = req.body;
+    if (!body.author || !body.content) {
+        res.status(400).send(`Todos os campos do formulário precisam ser válidos.`);
+    } else {
+        data.comments.push({
+            ...req.body,
+            "id": data.comments.length + 1
+        });
+        data.posts.find(post => post.id === parseInt(req.params.id)).commentCount++;
+        Save(data, filePath);
+        res.send("Comment sent");
+    }
 });
 
 App.put("/posts/:id", (req, res) => {

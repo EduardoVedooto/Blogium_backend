@@ -1,1 +1,92 @@
-{"posts":[{"id":1,"title":"Hello World","coverUrl":"https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png","contentPreview":"Esta é a estrutura de um post esperado pelo front-end","content":"Este é o conteúdo do post, o que realmente vai aparecer na página do post...","commentCount":5},{"title":"Criado no site ","coverUrl":"https://images-na.ssl-images-amazon.com/images/I/7125AinG8EL.jpg","content":"<p>Lorem ipsum<br></p>","contentPreview":"Preview do post","id":4,"commentCount":0},{"title":"titulo","coverUrl":"https://wallpapercave.com/wp/kjh8eTP.jpg","content":"tell your story<br><p><br></p>","contentPreview":"Preview do post","id":7,"commentCount":0},{"title":"title funcionando","coverUrl":"https://wallpapercave.com/wp/kjh8eTP.jpg","content":"<p>abd</p>","contentPreview":"Preview do post","id":8,"commentCount":0},{"title":"editado","coverUrl":"https://wallpapercave.com/wp/kjh8eTP.jpg","content":"<p>de novoagain<br></p>","contentPreview":"Preview do post","id":10,"commentCount":0},{"title":"teste","coverUrl":"https://oracoesdefe.com.br/wp-content/uploads/2019/05/4b8d49460051b86921dce5c522c1107e.jpg","content":"<p>aaaa</p>","contentPreview":"Preview do post","id":11,"commentCount":0,"comments":[]},{"title":"fdsfdsf","coverUrl":"https://i.pinimg.com/originals/41/f3/6a/41f36a7ac4c08398c5e86a74bb6230e8.jpg","content":"fdsfdsf<p><br></p>","contentPreview":"Preview do post","id":14,"commentCount":0,"comments":[]},{"title":"Sakuras","coverUrl":"https://wallpapercave.com/wp/kjh8eTP.jpg","content":"testando<br><p><br></p>","contentPreview":"Preview do post","id":15,"commentCount":0,"comments":[]}],"comments":[{"id":1,"postId":1,"author":"João","content":"Muito bom esse post! Tá de parabéns"},{"id":2,"postId":1,"author":"Maria","content":"Como faz pra dar palmas?"},{"postId":1,"author":"TESTE","content":"Olá","id":3},{"postId":1,"author":"mais um teste","content":"Olá de novo","id":4},{"postId":1,"author":"mais um","content":"hallo","id":5}]}
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Hello World",
+            "coverUrl": "https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png",
+            "contentPreview": "Esta é a estrutura de um post esperado pelo front-end",
+            "content": "Este é o conteúdo do post, o que realmente vai aparecer na página do post...",
+            "commentCount": 6
+        },
+        {
+            "title": "Criado no site ",
+            "coverUrl": "https://images-na.ssl-images-amazon.com/images/I/7125AinG8EL.jpg",
+            "content": "<p>Lorem ipsum<br></p>",
+            "contentPreview": "Preview do post",
+            "id": 4,
+            "commentCount": 0
+        },
+        {
+            "title": "title funcionando",
+            "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
+            "content": "<p>abd</p>",
+            "contentPreview": "Preview do post",
+            "id": 8,
+            "commentCount": 0
+        },
+        {
+            "title": "editado",
+            "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
+            "content": "<p>de novoagain<br></p>",
+            "contentPreview": "Preview do post",
+            "id": 10,
+            "commentCount": 0
+        },
+        {
+            "title": "teste",
+            "coverUrl": "https://oracoesdefe.com.br/wp-content/uploads/2019/05/4b8d49460051b86921dce5c522c1107e.jpg",
+            "content": "<p>aaaa</p>",
+            "contentPreview": "Preview do post",
+            "id": 11,
+            "commentCount": 0,
+            "comments": []
+        },
+        {
+            "title": "Sakuras",
+            "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
+            "content": "testando<br><p><br></p>",
+            "contentPreview": "Preview do post",
+            "id": 15,
+            "commentCount": 0,
+            "comments": []
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "postId": 1,
+            "author": "João",
+            "content": "Muito bom esse post! Tá de parabéns"
+        },
+        {
+            "id": 2,
+            "postId": 1,
+            "author": "Maria",
+            "content": "Como faz pra dar palmas?"
+        },
+        {
+            "postId": 1,
+            "author": "TESTE",
+            "content": "Olá",
+            "id": 3
+        },
+        {
+            "postId": 1,
+            "author": "mais um teste",
+            "content": "Olá de novo",
+            "id": 4
+        },
+        {
+            "postId": 1,
+            "author": "mais um",
+            "content": "hallo",
+            "id": 5
+        },
+        {
+            "postId": 1,
+            "author": "teste",
+            "content": "último teste",
+            "id": 6
+        }
+    ]
+}
