@@ -21,57 +21,78 @@
             "coverUrl": "https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png",
             "contentPreview": "Esta é a estrutura de um post esperado pelo front-end 2",
             "content": "Este é o conteúdo do post, o que realmente vai aparecer na página do post...",
-            "commentCount": 0,
-            "id": 3
+            "id": 3,
+            "commentCount": 0
         },
         {
             "title": "Criado no site ",
             "coverUrl": "https://images-na.ssl-images-amazon.com/images/I/7125AinG8EL.jpg",
             "content": "<p>Lorem ipsum<br></p>",
             "contentPreview": "Preview do post",
-            "id": 4
+            "id": 4,
+            "commentCount": 0
         },
         {
             "title": "Criado no site ",
             "coverUrl": "https://images-na.ssl-images-amazon.com/images/I/7125AinG8EL.jpg",
             "content": "<p>Lorem ipsum<br></p>",
             "contentPreview": "Preview do post",
-            "id": 5
+            "id": 5,
+            "commentCount": 0
         },
         {
             "title": "TESTE 32",
             "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
             "content": "Oi<p><br></p>",
             "contentPreview": "Preview do post",
-            "id": 6
+            "id": 6,
+            "commentCount": 0
         },
         {
             "title": "titulo",
             "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
             "content": "tell your story<br><p><br></p>",
             "contentPreview": "Preview do post",
-            "id": 7
+            "id": 7,
+            "commentCount": 0
         },
         {
             "title": "title",
             "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
             "content": "abc<p><br></p>",
             "contentPreview": "Preview do post",
-            "id": 8
+            "id": 8,
+            "commentCount": 0
         },
         {
             "title": "gjkljl",
             "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
             "content": "kfljwlkj<p><br></p>",
             "contentPreview": "Preview do post",
-            "id": 9
+            "id": 9,
+            "commentCount": 0
         },
         {
             "title": "kjlkjlkj",
             "coverUrl": "https://wallpapercave.com/wp/kjh8eTP.jpg",
             "content": "<p>kljkljlkj</p>",
             "contentPreview": "Preview do post",
-            "id": 10
+            "id": 10,
+            "commentCount": 0
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "postId": 1,
+            "author": "João",
+            "content": "Muito bom esse post! Tá de parabéns"
+        },
+        {
+            "id": 2,
+            "postId": 1,
+            "author": "Maria",
+            "content": "Como faz pra dar palmas?"
         }
     ]
 }
