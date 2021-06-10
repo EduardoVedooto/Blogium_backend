@@ -1,7 +1,9 @@
 import express from "express";
 import cors from "cors";
+import validUrl from "valid-url";
 import Load from "./utils/Load.js";
 import Save from "./utils/Save.js";
+
 
 const App = express();
 App.use(express.json());
@@ -15,14 +17,19 @@ App.get("/posts", (req, res) => {
 
 App.post("/posts", (req, res) => {
     const data = Load(filePath);
-    data.posts.push({
-        ...req.body,
-        "id": data.posts[data.posts.length - 1].id + 1 || 1,
-        "commentCount": 0,
-        "comments": []
-    });
-    Save(data, filePath);
-    res.send("Success");
+    const body = req.body;
+    if (!body.title || !body.coverUrl || !body.content || !validUrl.isUri(body.coverUrl)) {
+        res.status(400).send(`Todos os campos do formulário precisam ser válidos.`);
+    } else {
+        data.posts.push({
+            ...req.body,
+            "id": data.posts[data.posts.length - 1].id + 1 || 1,
+            "commentCount": 0,
+            "comments": []
+        });
+        Save(data, filePath);
+        res.send("Success");
+    }
 });
 
 App.get("/posts/:id", (req, res) => {
