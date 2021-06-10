@@ -47,4 +47,14 @@ App.post("/posts/:id/comments", (req, res) => {
     res.send("Comment sent");
 });
 
+App.put("/posts/:id", (req, res) => {
+    const data = Load(filePath);
+    const post = data.posts.find(post => post.id === parseInt(req.params.id));
+    post.title = req.body.title;
+    post.coverUrl = req.body.coverUrl;
+    post.content = req.body.content;
+    Save(data, filePath);
+    res.send(post);
+});
+
 App.listen(3333, () => console.log("Running server..."));
